@@ -1,13 +1,14 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Jigna Shah's Blog</a>
+      <a class="navbar-brand" href="#">Jigna's Blog</a>
     </div>
     	<ul class="nav nav-tabs" role="navigation">
   			<li><%= link_to 'Home', posts_path %></li>
-  			<li><%= link_to 'About me', posts_path %></li>
+  			<li><%= link_to 'About', about_path %></li>
 			<li><%= link_to 'Get in touch', posts_path %></li>
-  		</ul>
+      <li class="pull-right"><%= link_to 'New Post', new_post_path %></button>
+      </ul>
     </div>
   </div>
 </nav>
