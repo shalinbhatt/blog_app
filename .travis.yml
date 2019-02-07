@@ -5,3 +5,10 @@ before_script:
   - bundle exec rails db:create
   - bundle exec rails db:migrate
   - bundle exec rails assets:precompile
+deploy:
+  provider: heroku
+  api_key:
+    secure: "awkDLRjObKP5AHNXKl09/qJjfTnrZjk2ZnYSZI+mokwajubGxFJpbEzybA3fbcF6/E+umtdocK5xFY2HTd2P743tc+5lhnEqwlBQad2AD3qD6PZ9gavFcv/+fiiH1wO4b7pf9HdnSaksx8IzLnx1lPPJT66eXSN5K1G30sLthOuLLmNoW9G1qNIEwxEEkkG1My/ffQb4PaLSkyehzFjcOYFHjlCT+jIaZmUMMKJwQiswR1B6p+3UaKmu6axnH4mb5Y3gY/H2Y94yrjA3rcGrqRSHZ+1eC8q3hgQs4T7iJHVVfj93XFCZut3Qt+m/6/1HCeopMX3aYyAJFdCnNTJs7svw7sytxa5evv203IcrZRkblpaKkcDByZmasQ7j1JpIdZWOTrtkbCjb2xqwgp3hV/kT8W2GaCuQdVpJqEN4a3AvSQECfjljEIfasdgyzMfMztUc+JAxIrYsHF0s2xlF8Xs2nubU+mw0vhQITO4vm8nWDR3N0CbsP07xVAlvMZ0Ow4MDStGT7NpOM4hb4uJGj4MtwDcVWAR0TRhQqrbJFDA1BFCwXuSDuLi0E64TSwjIQAViygl4ZSIRmu/2FphurrZBHSuLgltX5QWzaaCD6zgTiE18VUIReow7vfmEx/rPsuWQ9lcAa5DDQlEY750lqOESBrNvm6xVIfdLlJ6mRJc="
+  app: blogtravis
+  on: 
+    repo: shalinbhatt/blog_app
